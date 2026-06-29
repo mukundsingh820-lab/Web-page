@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import streamlit as st
+import streamlit.components.v1 as components
+
+st.set_page_config(page_title="All About SDGs & AI", layout="wide")
+
+html_content = """<!DOCTYPE html>
 <html>
 <head>
 <title>All About SDGs and AI</title>
@@ -998,3 +1003,6 @@ Reference: sdgs.un.org/goals
 
 </body>
 </html>
+"""
+
+components.html(html_content, height=3500, scrolling=True)
